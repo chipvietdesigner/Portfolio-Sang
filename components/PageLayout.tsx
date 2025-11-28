@@ -215,7 +215,12 @@ export const PageLayout: React.FC<Props> = ({ content, side }) => {
                  {content.details?.specs?.map((spec, i) => (
                     <div key={i} className="flex flex-col">
                         <span className="text-[8px] font-sans uppercase tracking-widest text-zinc-400 mb-1">{spec.label}</span>
-                        <span className="text-[11px] font-serif italic text-zinc-800">{spec.value}</span>
+                        {!spec.isLink ? (
+                             <span className="text-[11px] font-serif italic text-zinc-800">{spec.value}</span>)
+                             : <span className="text-[11px] font-serif italic text-zinc-800" onClick={(e) => {
+                                e.stopPropagation();
+                                window.open(spec.value, '_blank');
+                             }} url={spec.value}>{spec.value}</span>}
                     </div>
                  ))}
              </div>

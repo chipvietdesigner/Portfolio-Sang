@@ -2,6 +2,7 @@
 export interface ProjectSpecs {
   label: string;
   value: string;
+  isLink?: boolean; // Optional field to indicate if the value is a link
 }
 
 export interface ProjectDetails {

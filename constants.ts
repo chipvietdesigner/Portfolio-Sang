@@ -168,6 +168,7 @@ export const PORTFOLIO_DATA: SheetData[] = [
             { label: 'ROLE', value: 'Lead Product Designer' },
             { label: 'DOMAIN', value: 'Fintech / Payments' },
             { label: 'PLATFORM', value: 'iOS / Android / Web' },
+            {label: 'View more', value: 'https://www.verypay.global/', isLink: true }
           ],
           description: [] 
         }
@@ -210,7 +211,7 @@ export const PORTFOLIO_DATA: SheetData[] = [
         projectIndex: '0.2',
         title: 'KLETTA',
         subtitle: 'ACCOUNTANT SAAS',
-        imageSrc: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1600&auto=format&fit=crop', 
+        imageSrc: '/assets/img1.png', 
         details: {
             year: '2023 - 2024',
             location: 'Nordic Market',
