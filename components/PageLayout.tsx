@@ -20,8 +20,8 @@ export const PageLayout: React.FC<Props> = ({ content, side }) => {
          
          {/* Top Info */}
          <div className="z-10 flex justify-between items-start opacity-70">
-             <span className="text-[9px] font-sans tracking-[0.2em] uppercase">Portfolio</span>
-             <span className="text-[9px] font-sans tracking-[0.2em] uppercase">{content.details?.year}</span>
+             <span className="text-[9px] font-sans tracking-[0.2em] uppercase"></span>
+             <span className="text-[9px] font-sans tracking-[0.2em] uppercase">2025</span>
          </div>
 
          {/* Center Title */}
@@ -42,7 +42,7 @@ export const PageLayout: React.FC<Props> = ({ content, side }) => {
 
          {/* Bottom Detail */}
          <div className="z-10 text-center opacity-50">
-             <p className="text-[8px] font-sans tracking-widest uppercase">{content.details?.location}</p>
+             <p className="text-[8px] font-sans tracking-widest uppercase"></p>
          </div>
          
          {/* Decorative Minimal Frame */}
@@ -363,7 +363,7 @@ export const PageLayout: React.FC<Props> = ({ content, side }) => {
              )}
 
              {content.socials && (
-                  <div className="flex items-center gap-10 mb-16">
+                  <div className="flex items-center underline gap-10 mb-16">
                       {content.socials.map((link, idx) => (
                           <a 
                             key={idx} 

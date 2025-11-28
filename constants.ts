@@ -136,7 +136,6 @@ export const PORTFOLIO_DATA: SheetData[] = [
           type: 'section-title',
           pageNumber: '07',
           title: 'SELECTED WORKS',
-          subtitle: 'Case Studies'
       }
   },
   // SHEET 5: PROJECT INDEX (FRONT) & VERYPAY OPENER (BACK)
@@ -146,7 +145,7 @@ export const PORTFOLIO_DATA: SheetData[] = [
           type: 'project-index',
           pageNumber: '08',
           title: 'INDEX',
-          subtitle: '2020 - 2024',
+          subtitle: '2020 - Present',
           description: [
               'VeryPay | Fintech',
               'Kletta | Accountant SaaS',
@@ -359,9 +358,7 @@ export const PORTFOLIO_DATA: SheetData[] = [
         type: 'contact', 
         pageNumber: '17',
         title: 'CONTACT',
-        subtitle: 'OPEN FOR NEW OPPORTUNITIES',
         description: [
-            'Based in Da Nang, Vietnam',
             '(+84) 329456195'
         ],
         email: 'chipviet.designer@gmail.com',
