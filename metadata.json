@@ -1,0 +1,5 @@
+{
+  "name": "Architectural Book Portfolio",
+  "description": "A 3D interactive book portfolio with page-flip animations using GSAP.",
+  "requestFramePermissions": []
+}
