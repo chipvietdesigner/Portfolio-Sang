@@ -28,6 +28,7 @@ export interface PageContentProps {
   type: 'cover' | 'intro' | 'project-opener' | 'project-detail' | 'project-right' | 'end' | 'resume' | 'section-title' | 'contact' | 'project-index';
   title?: string;
   subtitle?: string;
+  descriptionPrj?: string;
   email?: string; // Added email field
   projectIndex?: string; // e.g. "0.2", "0.3"
   pageNumber?: string;

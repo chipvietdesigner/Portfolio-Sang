@@ -49,13 +49,12 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
       {/* Bottom Row */}
       <div className="flex justify-between items-end">
         <div className="flex flex-col gap-1">
-            <p className="text-[10px] md:text-xs font-medium uppercase tracking-widest text-zinc-600 font-eb-garamond">Based in Vietnam.</p>
-            <p className="text-[10px] md:text-xs font-medium uppercase tracking-widest text-zinc-600 font-eb-garamond">Open for new opportunities.</p>
+            <p className="text-[10px] md:text-xs font-medium tracking-widest text-zinc-600 font-eb-garamond">Open for new opportunities.</p>
         </div>
         
         <div className="flex items-center gap-3">
              <div className="w-1.5 h-1.5 bg-black animate-pulse rounded-full"></div>
-             <p className="text-[10px] md:text-xs font-medium uppercase tracking-widest font-eb-garamond">Loading Resources</p>
+             <p className="text-[10px] md:text-xs font-medium tracking-widest font-eb-garamond">Loading Resources</p>
         </div>
       </div>
     </div>

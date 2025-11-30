@@ -16,12 +16,12 @@ export const PageLayout: React.FC<Props> = ({ content, side }) => {
     return (
       <div className={`${baseClasses} bg-[#1c1c1c] text-neutral-200 flex flex-col justify-between p-12 md:p-16 relative overflow-hidden border-l border-white/5`}>
          {/* Grain Texture */}
-         <div className="absolute inset-0 opacity-[0.12] pointer-events-none" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}></div>
+         <div className="absolute inset-0 opacity-[0.08] pointer-events-none" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}></div>
          
          {/* Top Info */}
          <div className="z-10 flex justify-between items-start opacity-70">
              <span className="text-[9px] font-sans tracking-[0.2em] uppercase"></span>
-             <span className="text-[9px] font-sans tracking-[0.2em] uppercase">2025</span>
+             <span className="text-[9px] font-sans tracking-[0.2em] uppercase"></span>
          </div>
 
          {/* Center Title */}
@@ -32,12 +32,12 @@ export const PageLayout: React.FC<Props> = ({ content, side }) => {
                      {content.details?.year}
                   </span>
              </div>
-
+{/* 
              <h1 className="relative z-10 text-5xl md:text-8xl font-cormorant italic font-medium tracking-wide leading-none mb-6 text-center text-transparent bg-clip-text bg-gradient-to-br from-white via-zinc-200 to-zinc-500">
                 {content.title}
-             </h1>
-             <div className="relative z-10 w-8 h-[1px] bg-white/30 mx-auto mb-6"></div>
-             <p className="relative z-10 text-xs font-sans uppercase tracking-[0.3em] text-neutral-400">{content.subtitle}</p>
+            //  </h1> */}
+            //  <div className="relative z-10 w-8 h-[1px] bg-white/30 mx-auto mb-6"></div>
+             {/* <p className="relative z-10 text-xs font-sans uppercase tracking-[0.3em] text-neutral-400">{content.subtitle}</p> */}
          </div>
 
          {/* Bottom Detail */}
@@ -179,8 +179,8 @@ export const PageLayout: React.FC<Props> = ({ content, side }) => {
         <div className="h-[65%] w-full relative overflow-hidden group">
             {/* Page number positioning based on side */}
             <div className={`absolute top-8 ${side === 'left' ? 'left-8' : 'right-8'} z-20 flex flex-col ${side === 'left' ? 'items-start' : 'items-end'}`}>
-                <span className="font-sans text-[8px] uppercase tracking-[0.2em] text-white/80 mix-blend-difference mb-1">Selected Work</span>
-                <span className="font-sans text-[10px] text-white mix-blend-difference">/{content.pageNumber}</span>
+                {/* <span className="font-sans text-[8px] uppercase tracking-[0.2em] text-white/80 mix-blend-difference mb-1">Selected Work</span> */}
+                {/* <span className="font-sans text-[10px] text-white mix-blend-difference">/{content.pageNumber}</span> */}
             </div>
             
             {content.imageSrc ? (
@@ -200,12 +200,15 @@ export const PageLayout: React.FC<Props> = ({ content, side }) => {
         {/* Bottom Content Section (35%) */}
         <div className="flex-1 px-12 md:px-16 pb-12 flex flex-col justify-end relative z-20 -mt-10">
              <div className="mb-6">
-                <p className="text-[10px] font-sans uppercase text-zinc-500 tracking-[0.3em] mb-3">
+                {/* <p className="text-[10px] font-sans uppercase text-zinc-500 tracking-[0.3em] mb-3">
                     {content.subtitle}
-                </p>
+                </p> */}
                 <h1 className="text-6xl md:text-7xl font-cormorant font-medium uppercase tracking-tight leading-none text-zinc-900">
                     {content.title}
                 </h1>
+                 <p className="text-[12px] font-cormorant text-zinc-900 ">
+                    {content.descriptionPrj}
+                </p>
              </div>
 
              <div className="w-full h-[1px] bg-black/10 mb-6"></div>
@@ -224,35 +227,7 @@ export const PageLayout: React.FC<Props> = ({ content, side }) => {
                     </div>
                  ))}
              </div>
-        </div>
-      </div>
-    );
-  }
-
-  // --- PROJECT DETAIL PAGE (Grid + Lists) ---
-  if (content.type === 'project-detail') {
-    return (
-        <div className={`${baseClasses} bg-[#fbfbfb] p-10 md:p-12 flex flex-col`}>
-             <div className="absolute inset-0 m-[1px] border-[0.5px] border-black/5 pointer-events-none"></div>
-             
-             {/* Header */}
-             <div className="flex justify-between items-start mb-10 shrink-0">
-                {side === 'right' ? (
-                     <>
-                        <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-zinc-800">{content.title}</span>
-                        <span className="font-sans text-[10px] text-zinc-400">/{content.pageNumber}</span>
-                     </>
-                ) : (
-                    <>
-                        <span className="font-sans text-[10px] text-zinc-400">/{content.pageNumber}</span>
-                        <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-zinc-800">{content.title}</span>
-                    </>
-                )}
-            </div>
-            
-            <div className="flex-1 flex flex-col gap-10">
-                {/* Horizontal Lists */}
-                <div className="space-y-8">
+              <div className="space-y-8">
                     {content.projectSections?.map((section, idx) => (
                         <div key={idx} className="flex flex-col gap-3">
                             <h4 className="text-sm font-cormorant italic font-semibold text-zinc-400 border-b border-zinc-100 pb-2 mb-2">
@@ -273,17 +248,44 @@ export const PageLayout: React.FC<Props> = ({ content, side }) => {
                         </div>
                     ))}
                 </div>
+        </div>
+      </div>
+    );
+  }
 
+  // --- PROJECT DETAIL PAGE (Grid + Lists) ---
+  if (content.type === 'project-detail') {
+    return (
+        <div className={`${baseClasses} bg-[#fbfbfb] p-10 md:p-12 flex flex-col`}>
+             <div className="absolute inset-0 m-[1px] border-[0.5px] border-black/5 pointer-events-none"></div>
+             
+             {/* Header */}
+             <div className="flex justify-between items-start shrink-0">
+                {side === 'right' ? (
+                     <>
+                        <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-zinc-800">{content.title}</span>
+                        <span className="font-sans text-[10px] text-zinc-400">/{content.pageNumber}</span>
+                     </>
+                ) : (
+                    <>
+                        <span className="font-sans text-[10px] text-zinc-400">/{content.pageNumber}</span>
+                        <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-zinc-800">{content.title}</span>
+                    </>
+                )}
+            </div>
+            
+            <div className="flex-1 flex-col">
+                {/* Horizontal Lists */}
                 {/* Image Gallery (Bottom) */}
                 <div className="mt-auto pt-8 border-t border-zinc-100">
-                    <div className="grid grid-cols-3 gap-2 h-32 md:h-40">
+                    <div className="grid grid-cols-2 gap-2 scroll">
                          {content.diagrams?.map((img, i) => (
                              <div key={i} className="relative overflow-hidden group border border-zinc-200">
                                  <div className="absolute inset-0 bg-indigo-900/10 mix-blend-multiply z-10 pointer-events-none transition-opacity group-hover:opacity-0"></div>
                                  <img 
                                     src={img} 
                                     alt="Detail" 
-                                    className="w-full h-full object-cover grayscale mix-blend-multiply opacity-90 transition-all duration-700 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" 
+                                    className="w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" 
                                 />
                              </div>
                          ))}

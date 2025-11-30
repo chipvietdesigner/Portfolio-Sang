@@ -7,8 +7,8 @@ export const PORTFOLIO_DATA: SheetData[] = [
     id: 1,
     front: {
       type: 'cover',
-      title: 'Sang Pham',
-      subtitle: 'PRODUCT DESIGNER',
+      title: '/   ',
+      subtitle: 'PHAM XUAN SANG (CHIP VIET)',
       details: {
         year: 'PORTFOLIO',
         location: 'Product Designer',
@@ -20,7 +20,7 @@ export const PORTFOLIO_DATA: SheetData[] = [
       type: 'intro',
       title: 'INTRODUCTION',
       description: [
-        'I am a Product Designer based in Da Nang, Vietnam.',
+        'Hello, I am a Product Designer & Product Designer Business Analyst based in Da Nang, Vietnam.',
         'At the heart of my work is a commitment to simplifying complexity, connecting the dots between user needs, business goals, and innovative design solutions.'
       ]
     }
@@ -58,7 +58,7 @@ export const PORTFOLIO_DATA: SheetData[] = [
       title: 'EXPERIENCE',
       resumeSections: [
         {
-            heading: 'Lead Designer & Business Analyst',
+            heading: 'Business Analyst',
             subheading: 'VeryPay LLC',
             date: 'Apr 2025 – Present',
             items: [
@@ -84,8 +84,8 @@ export const PORTFOLIO_DATA: SheetData[] = [
       resumeSections: [
         {
             items: [
-                'During this tenure, I delivered critical functions such as Investment portals, Lending logic, Invoice management, and Finance AI assistants. My work ensured strict adherence to PCI DSS Certifications and enabled advanced features like Geo-fencing, Inventory Management, and USSD Integration.',
-                'Key competencies honed during this period include UX/UI Design, Wireframing, and Prototyping using tools like Figma and FigJam. I also facilitated collaboration between business and technical teams, translating requirements into robust product flows.'
+                'During this tenure, I designed critical functions such as Investment portals, Lending logic, Invoice management, and Finance AI assistants.',
+                'Key competencies honed during this period include UX/UI Design, Wireframing, and Prototyping using tools like Figma and Draw.io. I also facilitated collaboration between business and technical teams, translating requirements into robust product flows.'
             ]
         },
         {
@@ -104,75 +104,100 @@ export const PORTFOLIO_DATA: SheetData[] = [
   {
       id: 4,
       front: {
-          type: 'resume',
-          pageNumber: '06',
-          title: 'SKILLS & EDUCATION',
-          resumeSections: [
-              {
-                  heading: 'Professional Skills',
-                  items: [
-                      'My core design competencies lie in Mobile & Web design, complex Wire-framing, Prototyping, and establishing robust Design Systems. I am also experienced in HMI Design. Technically, I am proficient in HTML/CSS, React Native, and ReactJS, with a foundational understanding of Java Springboot.'
-                  ]
-              },
-              {
-                  heading: 'Danang University of Technology',
-                  subheading: 'Bachelor of IT',
-                  date: '2017',
-                  items: [
-                      'Graduated with a focus on software engineering and system design, providing a strong technical foundation for my design career.'
-                  ]
-              },
-              {
-                  heading: 'AWS Build On Vietnam 2021',
-                  subheading: 'Champion',
-                  date: '2021',
-                  items: [
-                      'Achieved the Champion title and "Best Presentation" award out of 63 competing teams. Hosted by Amazon Web Services, this competition challenged us to solve real-world problems using cloud technology.'
-                  ]
-              }
-          ]
-      },
-      back: {
-          type: 'section-title',
+          // type: 'resume',
+          // pageNumber: '06',
+          // title: 'SKILLS & EDUCATION',
+          // resumeSections: [
+          //     {
+          //         heading: 'Professional Skills',
+          //         items: [
+          //             'My core design competencies lie in Mobile & Web design, complex Wire-framing, Prototyping, and Design Systems. I am also experienced in HMI Design. Technically, I have experience in React Native, and ReactJS, with a foundational understanding of Java Springboot.'
+          //         ]
+          //     },
+          //     {
+          //         heading: 'Danang University of Technology',
+          //         subheading: 'Bachelor of IT',
+          //         date: '2017',
+          //         items: [
+          //             'Graduated with a focus on software engineering and system design, providing a strong technical foundation for my design career.'
+          //         ]
+          //     },
+          //     {
+          //         heading: 'AWS Build On Vietnam 2021',
+          //         subheading: 'Champion',
+          //         date: '2021',
+          //         items: [
+          //             'Achieved the Champion title and "Best Presentation" award out of 63 competing teams. Hosted by Amazon Web Services, this competition challenged us to solve real-world problems using cloud technology.'
+          //         ]
+          //     }
+          // ]
+             type: 'section-title',
           pageNumber: '07',
           title: 'SELECTED WORKS',
-      }
-  },
-  // SHEET 5: PROJECT INDEX (FRONT) & VERYPAY OPENER (BACK)
-  {
-      id: 5,
-      front: {
-          type: 'project-index',
-          pageNumber: '08',
-          title: 'INDEX',
-          subtitle: '2020 - Present',
-          description: [
-              'VeryPay | Fintech',
-              'Kletta | Accountant SaaS',
-              'Curo | Drone HMI',
-              'Koodaa | AI Bookkeeper'
-          ]
       },
       back: {
-        type: 'project-opener',
+           type: 'project-opener',
         pageNumber: '09',
         projectIndex: '0.1',
         title: 'VERYPAY',
         subtitle: 'FINTECH SUPER APP',
-        imageSrc: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1600&auto=format&fit=crop', 
+        descriptionPrj: 'VeryPay is closed-loop contactless tap and go payment technology extend utility, increase usage of mobile money, and drive growth for Mobile Network Operators across the African continent.',
+        imageSrc: '/assets/verypay-merchant-tapcard.png', 
         details: {
           year: '2020 - 2025',
           location: 'Global',
           specs: [
-            { label: 'ROLE', value: 'Lead Product Designer' },
+            { label: 'ROLE', value: 'Business Analyst & Product Designer' },
             { label: 'DOMAIN', value: 'Fintech / Payments' },
-            { label: 'PLATFORM', value: 'iOS / Android / Web' },
-            {label: 'View more', value: 'https://www.verypay.global/', isLink: true }
+            { label: 'PLATFORM', value: 'iOS / Android / Web / POS devices / Card Printer' },
+            { label: 'Responsibilities',  value: 
+                  'Mobile Design / Web Design / Wireframing / Prototyping / Design Systems / Business Analysis',
+            },
+            // {label: 'View more', value: 'https://www.verypay.global/', isLink: true },
           ],
           description: [] 
-        }
+        },
       }
   },
+  // SHEET 5: PROJECT INDEX (FRONT) & VERYPAY OPENER (BACK)
+  // {
+  //     id: 5,
+  //     front: {
+  //         type: 'project-index',
+  //         pageNumber: '08',
+  //         title: 'INDEX',
+  //         subtitle: '2020 - Present',
+  //         description: [
+  //             'VeryPay | Fintech',
+  //             'Kletta | Accountant SaaS',
+  //             'Curo | Drone HMI',
+  //             'Koodaa | AI Bookkeeper'
+  //         ]
+  //     },
+  //     back: {
+  //       type: 'project-opener',
+  //       pageNumber: '09',
+  //       projectIndex: '0.1',
+  //       title: 'VERYPAY',
+  //       subtitle: 'FINTECH SUPER APP',
+  //       descriptionPrj: 'VeryPay is closed-loop contactless tap and go payment technology extend utility, increase usage of mobile money, and drive growth for Mobile Network Operators across the African continent.',
+  //       imageSrc: '/assets/verypay-cover.png', 
+  //       details: {
+  //         year: '2020 - 2025',
+  //         location: 'Global',
+  //         specs: [
+  //           { label: 'ROLE', value: 'Lead Product Designer' },
+  //           { label: 'DOMAIN', value: 'Fintech / Payments' },
+  //           { label: 'PLATFORM', value: 'iOS / Android / Web' },
+  //           { label: 'Responsibilities',  value: 
+  //                 'Mobile Design / Web Design / Wireframing / Prototyping / Design Systems / Business Analysis',
+  //           },
+  //           {label: 'View more', value: 'https://www.verypay.global/', isLink: true },
+  //         ],
+  //         description: [] 
+  //       },
+  //     }
+  // },
   // SHEET 6: VERYPAY DETAIL (FRONT) & KLETTA OPENER (BACK)
   {
     id: 6,
@@ -180,28 +205,11 @@ export const PORTFOLIO_DATA: SheetData[] = [
       type: 'project-detail',
       pageNumber: '10',
       title: 'VERYPAY INSIGHTS',
-      projectSections: [
-          {
-              heading: 'Key Responsibilities',
-              items: [
-                  'Defined architecture for closed-loop payment systems and mobile wallets.',
-                  'Designed end-to-end flows for NFC Tap-to-Pay and Agent POS terminals.',
-                  'Facilitated workshops with stakeholders to map complex financial regulations to UI.'
-              ]
-          },
-          {
-              heading: 'Key Achievements',
-              items: [
-                  'Reduced merchant onboarding time by 40% through unified KYC flows.',
-                  'Successfully launched PCI-DSS compliant payment modules across 3 African markets.',
-                  'Established a centralized Design System used by 12+ developers.'
-              ]
-          }
-      ],
+      
       diagrams: [
-          'https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=800&auto=format&fit=crop', 
-          'https://images.unsplash.com/photo-1616077168712-fc6c738ae826?q=80&w=800&auto=format&fit=crop', 
-          'https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?q=80&w=800&auto=format&fit=crop'
+         '/assets/verypay-card.png', 
+          '/assets/verypay-bo.png', 
+           '/assets/verypay-customer.png', 
       ]
     },
     back: {
@@ -210,18 +218,23 @@ export const PORTFOLIO_DATA: SheetData[] = [
         projectIndex: '0.2',
         title: 'KLETTA',
         subtitle: 'ACCOUNTANT SAAS',
-        imageSrc: '/assets/img1.png', 
+        imageSrc: '/assets/kletta-cover.png', 
+        descriptionPrj: 'Kletta is a SaaS platform designed to streamline accounting processes for small to medium-sized businesses. It offers features such as automated invoicing, expense tracking, and real-time financial reporting, all accessible through an intuitive mobile & web interface.',
         details: {
             year: '2023 - 2024',
             location: 'Nordic Market',
             specs: [
-                { label: 'ROLE', value: 'Product Designer' },
+                { label: 'ROLE', value: 'UX/UI Designer' },
                 { label: 'DOMAIN', value: 'Accounting / Tax' },
-                { label: 'PLATFORM', value: 'Web App' },
+                { label: 'PLATFORM', value: 'Mobile & Web apps' },
+                 { label: 'Responsibilities',  value: 
+                  'Mobile Design / Web Design / Prototyping / Design Systems',
+                },
             ],
             description: []
-        }
-    }
+        },
+    },
+    
   },
   // SHEET 7: KLETTA DETAIL (FRONT) & CURO OPENER (BACK)
   {
@@ -230,28 +243,15 @@ export const PORTFOLIO_DATA: SheetData[] = [
         type: 'project-detail',
         pageNumber: '12',
         title: 'KLETTA INSIGHTS',
-        projectSections: [
-            {
-                heading: 'Key Responsibilities',
-                items: [
-                    'Translated complex tax laws into intuitive, step-by-step wizard interfaces.',
-                    'Designed data-heavy dashboards for real-time financial monitoring.',
-                    'Conducted user testing with accountants to refine terminology and workflow speed.'
-                ]
-            },
-            {
-                heading: 'Key Achievements',
-                items: [
-                    'Increased user task completion rate by 25% for monthly reconciliation.',
-                    'Redesigned the "Year-End Closing" module, reducing support tickets by 15%.',
-                    'Delivered a scalable component library for tabular data and charts.'
-                ]
-            },
-        ],
+
         diagrams: [
-            'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=800&auto=format&fit=crop'
+           '/assets/kletta-appicon.png',
+           '/assets/kletta-typo.png',
+           '/assets/kletta-branding.png',
+            '/assets/kletta-portal-mobile.png',
+            '/assets/kletta-mobile-onboard.png',
+            '/assets/kletta-mobile-receipt.png',
+            
         ]
       },
       back: {
@@ -260,17 +260,22 @@ export const PORTFOLIO_DATA: SheetData[] = [
         projectIndex: '0.3',
         title: 'CURO',
         subtitle: 'DRONE MONITORING (HMI)',
-        imageSrc: "https://images.unsplash.com/photo-1506947411487-a5673826e6e6?q=80&w=1600&auto=format&fit=crop", 
+        descriptionPrj: 'Curo is an enterprise drone-management platform that remotely monitors and controls Drone-in-a-Box systems—complete with solar-powered mobility and DJI Dock 2 integration. It automates compliance, flight operations, and asset tracking so businesses can deploy drones anywhere with confidence.',
+       imageSrc: '/assets/curo-web1.png', 
         details: {
             year: '2022',
             location: 'International',
             specs: [
-                { label: 'ROLE', value: 'UX Designer' },
+                { label: 'ROLE', value: 'HMI Designer' },
                 { label: 'DOMAIN', value: 'HMI / Dashboard' },
-                { label: 'PLATFORM', value: 'Tablet / Controller' },
+                { label: 'PLATFORM', value: 'Tablet / Web apps' },
+                 { label: 'Responsibilities',  value: 
+                  'Web Design / Wireframing / Prototyping / Design Systems',
+                },
             ],
-            description: []
-        }
+            description: [],
+            
+        },
       }
   },
   // SHEET 8: CURO DETAIL (FRONT) & KOODAA OPENER (BACK)
@@ -280,82 +285,17 @@ export const PORTFOLIO_DATA: SheetData[] = [
         type: 'project-detail',
         pageNumber: '14',
         title: 'CURO INSIGHTS',
-        projectSections: [
-            {
-                heading: 'Key Responsibilities',
-                items: [
-                    'Designed high-contrast HMI interfaces for outdoor visibility (Day/Night modes).',
-                    'Optimized touch targets and layouts for tablet-based drone controllers.',
-                    'Created critical alert systems for battery low/signal loss scenarios.'
-                ]
-            },
-            {
-                heading: 'Key Achievements',
-                items: [
-                    'Improved operator reaction time to critical alerts by 2 seconds.',
-                    'Designed a 3D-map overlay system that enhanced spatial awareness.',
-                    'Standardized the icon set for hardware status indicators.'
-                ]
-            }
-        ],
+       
         diagrams: [
-            'https://images.unsplash.com/photo-1527430253228-e93688616381?q=80&w=800&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=800&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=800&auto=format&fit=crop'
+              '/assets/curo-whydrone.png',
+               '/assets/curo-user.png',
+              '/assets/curo-module.png',
+                '/assets/curo-tablet.png',
+             
         ]
       },
       back: {
-        type: 'project-opener',
-        pageNumber: '15',
-        projectIndex: '0.4',
-        title: 'KOODAA',
-        subtitle: 'AI BOOKKEEPER',
-        imageSrc: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1600&auto=format&fit=crop', 
-        details: {
-            year: '2024',
-            location: 'Startup',
-            specs: [
-                { label: 'ROLE', value: 'Product Designer' },
-                { label: 'DOMAIN', value: 'AI / Automation' },
-                { label: 'PLATFORM', value: 'Web / Responsive' },
-            ],
-            description: []
-        }
-      }
-  },
-  // SHEET 9: KOODAA DETAIL (FRONT) & CONTACT (BACK)
-  {
-      id: 9,
-      front: {
-        type: 'project-detail',
-        pageNumber: '16',
-        title: 'KOODAA INSIGHTS',
-        projectSections: [
-            {
-                heading: 'Key Responsibilities',
-                items: [
-                    'Designed the Conversational UI (CUI) for the AI assistant to query financial data.',
-                    'Created trust-building mechanisms (citations, confidence scores) for AI outputs.',
-                    'Developed a "Review Mode" for humans to validate AI-categorized transactions.'
-                ]
-            },
-            {
-                heading: 'Key Achievements',
-                items: [
-                    'Successfully integrated OCR receipt scanning into the chat interface.',
-                    'Designed a seamless hand-off flow from AI automation to human manual review.',
-                    'Created a dark-mode first aesthetic appealing to tech-savvy freelancers.'
-                ]
-            }
-        ],
-        diagrams: [
-            'https://images.unsplash.com/photo-1655720828018-edd2daec9349?q=80&w=800&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=800&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=800&auto=format&fit=crop'
-        ]
-      },
-      back: {
-        type: 'contact', 
+         type: 'contact', 
         pageNumber: '17',
         title: 'CONTACT',
         description: [
@@ -363,17 +303,19 @@ export const PORTFOLIO_DATA: SheetData[] = [
         ],
         email: 'chipviet.designer@gmail.com',
         socials: [
-          { label: 'Behance', url: 'https://www.behance.net/' },
-          { label: 'Dribbble', url: 'https://dribbble.com/' }
+          { label: 'Behance', url: 'https://www.behance.net/chipviet' },
+          { label: 'Dribbble', url: 'https://dribbble.com/chipvietdesigner' }
         ]
-    }
+      }
   },
+  // SHEET 9: KOODAA DETAIL (FRONT) & CONTACT (BACK)
+  
   // SHEET 10: BACK COVER (FRONT) & EMPTY (BACK)
   {
       id: 10,
       front: {
         type: 'end', // Reusing end layout for back cover appearance
-        title: '',
+        title: 'Thank you for watching',
         subtitle: '',
         details: { year: '', location: '', specs: [], description: [] }
       },
